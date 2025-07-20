@@ -19,44 +19,27 @@ A simple, secure Windows Forms application for encrypting any string using AES-2
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) or later
 - Windows OS (WinForms only runs on Windows)
 
-**Recommended .csproj Settings:**
-```xml
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net9.0-windows</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyName>Encrypt Me</AssemblyName>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <SelfContained>true</SelfContained>
-    <PublishSingleFile>true</PublishSingleFile>
-    <PublishReadyToRun>true</PublishReadyToRun>
-    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
-  </PropertyGroup>
-</Project>
-````
-
 **How to Publish:**
 
 1. Open a terminal/command prompt in the project directory.
 2. Run the following command:
 
    ```
-   dotnet publish -c Release -r win-x64 --self-contained true
+   dotnet publish -c Release
    ```
 3. The executable will be in:
 
    ```
-   ./bin/Release/net9.0-windows/win-x64/publish/
+   ./publish
    ```
 
-   * File will be named `Encrypt Me.exe` (as set in `.csproj`).
+   * File will be named `EncryptMe.exe`.
 
 ---
 
 ## How to Use
 
-1. **Run** `Encrypt Me.exe`.
+1. **Run** `EncryptMe.exe`.
 2. **Enter** the string you wish to encrypt into the text box.
 3. **Click** the “Encrypt” button.
 4. **Choose** the output folder when prompted.
@@ -73,14 +56,6 @@ A simple, secure Windows Forms application for encrypting any string using AES-2
 ## Troubleshooting
 
 * If the app opens slowly on first launch, this is normal for self-contained .NET WinForms apps due to runtime extraction.
-* If you see many DLLs in `publish/`, ensure your `.csproj` has `PublishSingleFile` set to `true` and use the correct publish command above.
 * Only Windows is supported.
-
----
-
-## License
-
-MIT License
-
 
 ---
