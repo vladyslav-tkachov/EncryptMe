@@ -1,0 +1,50 @@
+# Visual Studio & .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.dbmdl
+*.cache
+*.pdb
+
+# Build output
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+
+# Published apps
+publish/
+*.exe
+*.dll
+*.json
+
+# Rider & JetBrains
+.idea/
+*.sln.iml
+
+# User-specific files
+*.swp
+*.bak
+*.tmp
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# Windows Forms designer files backup
+*.resx~
+
+# Others
+*.db
+*.sqlite
+*.zip
