@@ -3,6 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace EncryptMe
 {
@@ -88,6 +89,16 @@ namespace EncryptMe
                     csEncrypt.FlushFinalBlock();
                     return msEncrypt.ToArray();
                 }
+            }
+        }
+        private static System.Drawing.Icon LoadEmbeddedIcon(string resourceName)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            using (var stream = assembly.GetManifestResourceStream(resourceName))
+            {
+                if (stream == null)
+                    throw new InvalidOperationException($"Resource '{resourceName}' not found.");
+                return new System.Drawing.Icon(stream);
             }
         }
     }

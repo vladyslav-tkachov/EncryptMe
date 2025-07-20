@@ -62,6 +62,7 @@ namespace EncryptMe
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "EncryptMe";
+            this.Icon = LoadEmbeddedIcon("EncryptMe.EncryptMe.ico"); // Adjust as needed
             this.ResumeLayout(false);
             this.PerformLayout();
         }

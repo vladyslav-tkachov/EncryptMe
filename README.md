@@ -33,13 +33,13 @@ A simple, secure Windows Forms application for encrypting any string using AES-2
    ./publish
    ```
 
-   * File will be named `EncryptMe.exe`.
+   * File will be named `Encrypt Me.exe`.
 
 ---
 
 ## How to Use
 
-1. **Run** `EncryptMe.exe`.
+1. **Run** `Encrypt Me.exe`.
 2. **Enter** the string you wish to encrypt into the text box.
 3. **Click** the “Encrypt” button.
 4. **Choose** the output folder when prompted.

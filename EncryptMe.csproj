@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0-windows</TargetFramework>
@@ -10,5 +10,9 @@
     <PublishTrimmed>false</PublishTrimmed>
     <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
     <PublishDir>$(MSBuildProjectDirectory)\publish\</PublishDir>
-  </PropertyGroup>
+    <ApplicationIcon>EncryptMe.ico</ApplicationIcon>
+</PropertyGroup>    
+<ItemGroup>
+   <EmbeddedResource Include="EncryptMe.ico" />
+</ItemGroup>
 </Project>
