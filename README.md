@@ -1,0 +1,2 @@
+# EncryptMe
+Encrypts provided strings.
